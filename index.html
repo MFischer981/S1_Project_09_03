@@ -8,8 +8,8 @@
       Case Problem 3
 
       CSS Demo Form
-      Author: 
-      Date:   
+      Author: Micah Fischer
+      Date:   1-22-18
 
       Filename:   wm_demo.html
 
@@ -72,14 +72,17 @@
     <section>
         <h1>CSS Demo</h1>
         <form action="">
+            <!-- Text area to input text. Name and id set. Placeholder text added. Set to focus. Wrap text set to hard. -->
             <textarea name="sampleText" id="sampleBox" cols="30" rows="10" autofocus tabindex="1" wrap="hard"
                 placeholder="enter sample text and press the tab key."></textarea>
             <p>Select the css style values from the form below and preview the effect on the sample text in the preview
                 box.
             </p>
+            <!-- First feild set. -->
             <fieldset>
+                <!-- Legend set to fonts. -->
                 <legend>Fonts</legend>
-
+                <!-- Label for font family. Selection with option groups. Nested options in each option group. -->
                 <label for="fontfamily">Font Family</label>
                 <select name="fontfamily" id="fontfamily">
                     <optgroup label="Generic Fonts">
@@ -103,6 +106,7 @@
                     </optgroup>
                 </select>
 
+                <!-- Label and selection list for font styles. -->
                 <label for="fontstyle">Font Style</label>
                 <select name="fontstyle" id="fontstyle">
                     <option value="normal">normal</option>
@@ -110,13 +114,14 @@
                     <option value="oblique">oblique</option>
                 </select>
 
-
+                <!-- Label and selection list for font weight. -->
                 <label for="fontweight">Font Weight</label>
                 <select name="fontweight" id="fontweight">
                     <option value="normal">normal</option>
                     <option value="bold">bold</option>
                 </select>
 
+                <!-- Label and selection list for font decoration. -->
                 <label for="textdecoration">Font Decoration</label>
                 <select name="textdecoration" id="textdecoration">
                     <option value="none">none</option>
@@ -125,6 +130,7 @@
                     <option value="underline">underline</option>
                 </select>
 
+                <!-- Label and selection list for text transformation. -->
                 <label for="texttransform">Text Transformation</label>
                 <select name="texttransform" id="texttransform">
                     <option value="none">none</option>
@@ -133,27 +139,34 @@
                     <option value="uppercase">uppercase</option>
                 </select>
 
+                <!-- Label and selection list for font variant. -->
                 <label for="fontvariant">Font Variant</label>
                 <select name="fontvariant" id="fontvariant">
                     <option value="none">none</option>
                     <option value="small-caps">small-caps</option>
                 </select>
-
             </fieldset>
 
+            <!-- Second feild set. -->
             <fieldset>
+                <!-- Legend set to color. -->
                 <legend>Color</legend>
 
+                <!-- Label and color picker for foreground color. Default value of white. -->
                 <label for="color">Foreground Color</label>
                 <input type="color" name="color" id="color" value="#000000">
 
+                <!-- Label and color picker for background color. Default value of black. -->
                 <label for="backgroundcolor">Background Color</label>
                 <input type="color" name="backgroundcolor" id="backgroundcolor" placeholder="#rrggbb" value="#FFFFFF">
             </fieldset>
 
+            <!-- Third feild set. -->
             <fieldset>
+                <!-- Legend set to size. -->
                 <legend>Size</legend>
 
+                <!-- Label and range slider for font size. Default value of 14. Steps of 1, min and max values set. -->
                 <label for="fontsize">Font Size (px)</label>
                 <div class="slider">
                     8
@@ -161,6 +174,7 @@
                     40
                 </div>
 
+                <!-- Label and range slider for letter spacing. Default value of 0. Steps of 1, min and max values set. -->
                 <label for="letterspacing">Letter Spacing (px)</label>
                 <div class="slider">
                     0
@@ -168,6 +182,7 @@
                     10
                 </div>
 
+                <!-- Label and range slider for word spacing. Default value of 0. Steps of 1, min and max values set. -->
                 <label for="wordspacing">Word Spacing (px)</label>
                 <div class="slider">
                     0
@@ -175,6 +190,7 @@
                     10
                 </div>
 
+                <!-- Label and range slider for line height. Default value of 1. Steps of .2, min and max values set. -->
                 <label for="lineheight">Line Height (em)</label>
                 <div class="slider">
                     0
@@ -182,6 +198,7 @@
                     4
                 </div>
 
+                <!-- Label and range slider for text indent. Default value of 0. Steps of 1, min and max values set. -->
                 <label for="textindent">Text Indent (px)</label>
                 <div class="slider">
                     0
@@ -194,7 +211,7 @@
         </form>
 
 
-
+        <!-- H2, with div for output text. -->
         <h2>Rendered Text</h2>
         <div id="output"></div>
 

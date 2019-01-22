@@ -6,20 +6,23 @@
    Case Problem 3
 
    WidgetMage Form Styles
-   Author: 
-   Date:   
+    Author: Micah Fischer 
+    Date: 1-22-18
 
    Filename: wm_forms.css
 
 */
 
 /* Field Set Styles */
+
+/* Fieldset border of none, width of 60%. Margin on top and bottom of 10px. */
 fieldset {
     border: none;
     width: 60%;
     margin: 10px 0;
 }
 
+/* Legend background light grey. Width of 100%. Margin of 2px on top and bottom. */
 legend {
     background: rgb(232, 232, 232);
     width: 100%;
@@ -27,6 +30,8 @@ legend {
 }
 
 /* DIV Styles */
+
+/* Slider div floated on left with width of 60%. Margin of 2px on top and bottom. */
 div.slider {
     float: left;
     width: 60%;
@@ -34,6 +39,7 @@ div.slider {
 }
 
 /* Control Styles */
+/* Label floated and cleared left. Displayed as block. Width 40%. Margin top and bottom of 2px. */
 label {
     clear: left;
     float: left;
@@ -42,20 +48,24 @@ label {
     margin: 2px 0;
 }
 
+/* Input and select with top and bottom margin of 2px. */
 input,
 select {
     margin: 0 2px;
 }
 
+/* Input type of range width set to 60%. */
 input[type='range'] {
     width: 60%;
 }
 
+/* Input type of color set to block with width of 75%. */
 input[type="color"] {
     display: block;
     width: 75px;
 }
 
+/* Text area font size set to 1.5em. Width of 100% and height of 200px. Margin bottom set to 15px. */
 textarea {
     font-size: 1.5em;
     width: 100%;
@@ -63,6 +73,7 @@ textarea {
     margin-bottom: 15px;
 }
 
+/* Select set to display of block. */
 select {
     display: block;
     float: left;
@@ -70,6 +81,7 @@ select {
 }
 
 /* Placeholder Styles */
+/* Default placeholder styles. Background set to yellow, font set to pink. Font size set to 1.5em. Styles repeat below to match different browsers. */
 textarea::placeholder {
     color: rgb(255, 151, 151);
     background: rgb(255, 255, 191);
@@ -90,12 +102,14 @@ textarea:-moz-placeholder {
     font-size: 1.5em;
 }
 
+/* Chrome */
 textarea:-webkit-input-placeholder {
     color: rgb(255, 151, 151);
     background: rgb(255, 255, 191);
     font-size: 1.5em;
 }
 
+/* IE 11 and Edge */
 textarea:-ms-input-placeholder {
     color: rgb(255, 151, 151);
     background: rgb(255, 255, 191);
